@@ -8,9 +8,9 @@ namespace VideoIndexer.Api.Auth;
 
 public class AuthenticationService(IHttpClientFactory httpClientFactory, AzureVideoIndexerOptions options)
 {
-    public static async Task<string> GetArmAccessTokenAsync(CancellationToken ct = default)
+    public async Task<string> GetArmAccessTokenAsync(CancellationToken ct = default)
     {
-        var credentials = new DefaultAzureCredential();
+        var credentials = new DefaultAzureCredential(new DefaultAzureCredentialOptions());
         var tokenRequestContext = new TokenRequestContext([$"https://management.azure.com/.default"]);
         var tokenRequestResult = await credentials.GetTokenAsync(tokenRequestContext, ct);
         return tokenRequestResult.Token;
