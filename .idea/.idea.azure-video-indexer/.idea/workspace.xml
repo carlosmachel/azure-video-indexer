@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd29b77-fb51-45fa-9f7a-94582f3b231b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VideoIndexer.Api/Indexer/Enums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.azure-video-indexer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.azure-video-indexer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoIndexer.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoIndexer.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoIndexer.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoIndexer.Api/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="1fd29b77-fb51-45fa-9f7a-94582f3b231b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +27,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9ea5e63a02ac8d4c774259c5256a6a4558ffe31f67af7d37544f59f63fe21b3/EndpointMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -163,7 +160,7 @@
       <workItem from="1739910340373" duration="7149000" />
       <workItem from="1739917906291" duration="4944000" />
       <workItem from="1739966425530" duration="2863000" />
-      <workItem from="1739995465252" duration="12202000" />
+      <workItem from="1739995465252" duration="12260000" />
     </task>
     <servers />
   </component>
