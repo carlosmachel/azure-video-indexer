@@ -44,7 +44,7 @@ public class AzureVideoIndexerService(IHttpClientFactory httpClientFactory, Auth
     /// <param name="exludedAIs"> The ExcludeAI list to run </param>
     /// <param name="waitForIndex"> should this method wait for index operation to complete </param>
     /// <exception cref="Exception"></exception>
-    /// <returns> Video Id of the video being indexed, otherwise throws excpetion</returns>
+    /// <returns> Video Id of the video being indexed</returns>
     public async Task<string> UploadUrlAsync(
         string accessToken, 
         string accountId, 
@@ -61,7 +61,8 @@ public class AzureVideoIndexerService(IHttpClientFactory httpClientFactory, Auth
             { "description", "video_description" },
             { "privacy", "private" },
             { "accessToken" , accessToken },
-            { "videoUrl" , videoUrl }
+            { "videoUrl" , videoUrl },
+            {"language", "pt-BR"}
         };
 
         if (!Uri.IsWellFormedUriString(videoUrl, UriKind.Absolute))
@@ -90,6 +91,32 @@ public class AzureVideoIndexerService(IHttpClientFactory httpClientFactory, Auth
         var videoId = JsonSerializer.Deserialize<VideoResponse>(uploadResult).Id;
         
         return videoId;
+    }
+    
+    public async Task<string> IndexAsync(string accessToken, string accountId, string location,  string videoId)
+    {
+        Console.WriteLine($"Waiting for video {videoId} to finish indexing.");
+        while (true)
+        {
+            var queryParams = CreateQueryString(new Dictionary<string, string>
+            {
+                {"language", "Portuguese"},
+                { "accessToken" , accessToken },
+            });
+
+            var requestUrl = $"{options.ApiEndpoint}/{location}/Accounts/{accountId}/Videos/{videoId}/Index?{queryParams}";
+            var client = httpClientFactory.CreateClient();
+            var result = await client.GetAsync(requestUrl);
+            
+            if (result.StatusCode != System.Net.HttpStatusCode.OK)
+            {
+                var content = await result.Content.ReadAsStringAsync();
+                throw new Exception(content);
+            }
+            
+            return await result.Content.ReadAsStringAsync();
+            
+        }
     }
     
     private static string AddExcludedAIs(string ExcludedAI)

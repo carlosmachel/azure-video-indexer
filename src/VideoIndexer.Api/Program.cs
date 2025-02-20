@@ -35,8 +35,22 @@ app.MapGet("/videos/upload", async ([FromServices] AzureVideoIndexerService serv
         var accessToken = await authenticationService.GetAccountAccessTokenAsync(armToken);
 
         var account = await service.GetAccountAsync(armToken, options.AccountName);
-        Results.Ok(await service.UploadUrlAsync(accessToken, account.Properties.Id, account.Location, videoUrl, videoName));
+        return Results.Ok(await service.UploadUrlAsync(accessToken, account.Properties.Id, account.Location, videoUrl, videoName));
     })
     .WithName("UploadVideo");
+
+
+app.MapGet("/videos/index", async ([FromServices] AzureVideoIndexerService service, [FromServices] AuthenticationService authenticationService,
+        [FromQuery] string videoId) =>
+    {
+        var armToken = await authenticationService.GetArmAccessTokenAsync();
+        var accessToken = await authenticationService.GetAccountAccessTokenAsync(armToken);
+
+        var account = await service.GetAccountAsync(armToken, options.AccountName);
+        var result = await service.IndexAsync(accessToken, account.Properties.Id, account.Location, videoId);
+        
+        return Results.Text(result, contentType: "application/json");
+    })
+    .WithName("Index");
 
 app.Run();
