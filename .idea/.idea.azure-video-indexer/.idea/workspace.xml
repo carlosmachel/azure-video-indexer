@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd29b77-fb51-45fa-9f7a-94582f3b231b" name="Changes" comment="" />
+    <list default="true" id="1fd29b77-fb51-45fa-9f7a-94582f3b231b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.azure-video-indexer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.azure-video-indexer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VideoIndexer.Api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoIndexer.Api/Properties/launchSettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,13 +28,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/885f72efe99348d1b0291eb4dfa4193955620/33/e2471c64/DefaultAzureCredentialOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e9560027e28243b88773840f429405412f120/80/2626cfc0/OpenApiServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9ea5e63a02ac8d4c774259c5256a6a4558ffe31f67af7d37544f59f63fe21b3/EndpointMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf9021a960b74107a7e141aa06bc9d8a0a53c929178c2fb95b1597be8af8dc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/carlosmachel/Projects/videos/azure-video-indexer/src/VideoIndexer.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -45,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.VideoIndexer.Api: http (1).executor": "Debug",
-    ".NET Launch Settings Profile.VideoIndexer.Api: http.executor": "Debug",
-    ".NET Launch Settings Profile.VideoIndexer.Api: https (1).executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.877451",
-    "git-widget-placeholder": "InitialCommit",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.VideoIndexer.Api: http (1).executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.VideoIndexer.Api: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.VideoIndexer.Api: https (1).executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.877451&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;InitialCommit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.VideoIndexer.Api: https (1)">
     <configuration name="VideoIndexer.Api" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -161,6 +159,7 @@
       <workItem from="1739917906291" duration="4944000" />
       <workItem from="1739966425530" duration="2863000" />
       <workItem from="1739995465252" duration="12260000" />
+      <workItem from="1740086895854" duration="3988000" />
     </task>
     <servers />
   </component>
@@ -177,16 +176,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/VideoIndexer.Api/Program.cs</url>
-          <line>37</line>
+          <line>33</line>
           <properties documentPath="$PROJECT_DIR$/src/VideoIndexer.Api/Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="1310" />
+              <option value="1056" />
             </startOffsets>
             <endOffsets>
-              <option value="1433" />
+              <option value="1124" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs</url>
+          <line>57</line>
+          <properties documentPath="$PROJECT_DIR$/src/VideoIndexer.Api/Indexer/AzureVideoIndexerService.cs" containingFunctionPresentation="Method 'UploadUrlAsync'">
+            <startOffsets>
+              <option value="2441" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2757" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
